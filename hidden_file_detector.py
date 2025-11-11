@@ -14,7 +14,7 @@ import stat
 try:
     input = raw_input  # Python 2
 except NameError:
-    pass  # Python 3
+    raw_input = input  # Python 3
 
 def get_system():
     """Get operating system name (compatible way)"""
